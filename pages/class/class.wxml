@@ -1,0 +1,29 @@
+<!--pages/class/class.wxml-->
+<view id="classify">
+  <van-nav-bar
+    left-text="分类"
+    border="{{false}}"
+    bind:click-left="onClickLeft"
+  />
+  <view class="search">
+    <view class="content">
+      <view>
+        <image src="../images/search.png"></image>
+        <text>搜索商品</text>
+      </view>
+    </view>
+    <view class="carts">
+      <image src="../images/classcarts.png"></image>
+    </view>
+  </view>
+  <view class="navgoods" style="height:calc(100vh - {{statusBarHeight+102}}px)">
+  <scroll-view scroll-with-animation scroll-y="true" style="height: 100%" scroll-top="{{scrollTop}}" class="navs">
+    <view class="navs-items {{indexs === index?'navs-sidebar-item':''}}" data-index="{{index}}" wx:for="{{navs}}" wx:key="index" bindtap="playNav">{{item.name}}</view> 
+    </scroll-view>
+    <view class="goods">
+      <scroll-view scroll-y="true" style="height: 100%" class="goods">
+      <goods data-index="{{index}}" wx:for="{{10}}" wx:key="index" bindtap="playNav">{{index}}</goods> 
+      </scroll-view>
+    </view>
+  </view>
+</view>

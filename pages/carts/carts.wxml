@@ -1,0 +1,49 @@
+<!--pages/carts/carts.wxml-->
+<view id="carts">
+  <van-nav-bar
+    left-text="购物车"
+    border="{{false}}"
+    bind:click-left="onClickLeft"
+  />
+  <view class="adr">
+    <view>
+      <image src="../images/adr.png"></image>
+      <text>这是我的地址</text>
+    </view>
+    <view class="edit">编辑</view>
+  </view>
+  <view class="none"  style="display:none;">
+    <view class="nogoods">
+      <image src="../images/none.png"></image>
+      <view class="no-text">你的购物车怎么空了?</view>
+      <view class="go">去逛逛</view>
+    </view>
+  </view>
+  <view class="cartsgoods"  style="height:calc(100vh - {{statusBarHeight+142}}px);">
+    <view class="cartsgoods-content" wx:for="{{6}}">
+      <text class="check"></text>
+      <image src="../images/cartsgoods.png" ></image>
+      <view class="carts-text">
+        <view class="carts-title">亮林水果先生广西牛奶3斤</view>
+        <view class="carts-msg">2斤 正负0.2斤</view>
+        <view class="pricestep">
+          <view class="cartsprice">
+            <text style="font-size:20rpx;">¥</text>
+            <text style="padding-left:8rpx;font-size:28rpx;">7.99</text>
+          </view>
+          <view class="step">
+            <van-stepper value="{{ 1 }}" step="2" plus-class="add" minus-class="reduce" input-class="ipt"/>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <van-submit-bar
+    price="{{ 3050 }}"
+    button-text="提交订单"
+    bind:submit="onClickButton"
+    tip="{{ true }}"
+  >
+    <van-tag type="primary" class="primary"><text class="check"></text> <text style="height:20px;line-height:20px;padding-left:20rpx;display:inline-block;">全选</text> </van-tag>
+  </van-submit-bar>
+</view>

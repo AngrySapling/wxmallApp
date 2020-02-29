@@ -1,0 +1,66 @@
+<!--pages/my/my.wxml-->
+<view id="my">
+    <van-nav-bar title="个人中心" border="{{false}}">
+      <van-icon class="icon" name="setting-o" slot="left" size="16px"/>
+    </van-nav-bar>
+    <view class="nick">
+      <image class="img" src="../images/mybanner.png"></image>
+      <view class="user" style="top:{{statusBarHeight+44}}px">
+        <image src="../images/goods.png"></image>
+        <view class="msg">
+          <view class="name">Snow</view>
+          <view class="phone">17635798369</view>
+        </view>
+        <view class="agent">成为代理商</view>
+      </view>
+      
+    </view>
+    <view class="order">
+      <view class="order-title">
+        <view class="text">我的订单</view>
+      </view>
+      <view class="order-nav">
+        <view class="order-li">
+          <view class="content">
+            <image src="../images/order.png"></image>
+            <view class="text">全部订单</view>
+          </view>
+        </view>
+        <view class="order-li">
+          <view class="content">
+            <image src="../images/pay.png"></image>
+            <view class="text">代付款</view>
+          </view>
+        </view>
+        <view class="order-li">
+          <view class="content">
+            <image src="../images/carry.png"></image>
+            <view class="text">待提货</view>
+          </view>
+        </view>
+        <view class="order-li">
+          <view class="content">
+            <image src="../images/wait.png"></image>
+            <view class="text">已提货</view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="pickup">
+      <view class="pickup-title">
+        <view class="text1">我的当前自提点</view>
+        <view class="text2">切换自提点<van-icon name="arrow" style="vertical-align: middle;"/></view>
+      </view>
+      <view class="pickup-nav">
+        <view class="market">开福凤凰自行车店铺</view>
+        <view class="adr">湖南长沙市开福史蒂夫蓝枫录小下庄凤凰购物中心观园路1122</view>
+        <view class="tel">
+          <text>门店电话</text>
+          <text>13311331313</text>
+        </view>
+      </view>
+    </view>
+    <view class="my-cell" style="margin-top:10px;">
+      <van-cell title="单元格" is-link value="内容" />
+    </view>
+</view>

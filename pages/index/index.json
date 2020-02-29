@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "nav-bar": "../components/navbar/navbar",
+    "van-grid": "../components/grid/index",
+    "van-grid-item": "../components/grid-item/index",
+    "goods": "../components/goods/goods"
+  }
+}

@@ -1,0 +1,124 @@
+/* pages/carts/carts.wxss */
+#carts{
+  background: #ecedf2;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.adr{
+  height: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  position: relative;
+}
+.adr image{
+  height: 16px;
+  width: 16px;
+  vertical-align: middle;
+}
+.adr .edit{
+  height: 28px;
+  line-height: 28px;
+  position: absolute;
+  right: 20px;
+  top: 0;
+}
+.nogoods image{
+  height: 140px;
+  width: 140px;
+}
+.nogoods .no-text{
+  line-height: 50px;
+  height: 50px;
+} 
+.none{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index:0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.go{
+  height: 33px;
+  width: 100px;
+  border-radius: 16px;
+  border:1px solid red;
+  text-align: center;
+  line-height: 33px;
+  margin:  12px auto 0;
+  color: red;
+}
+.cartsgoods{
+  padding: 20rpx;
+  overflow: auto;
+}
+.cartsgoods .cartsgoods-content{
+  padding: 20rpx 16rpx;
+  background: #fff;
+  display: flex;
+  margin-bottom: 20rpx;
+  border-radius: 10rpx;
+  overflow: hidden;
+}
+#carts  .check{
+  display: inline-block;
+  height: 40rpx;
+  width: 40rpx;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  align-self: center;
+  vertical-align: middle;
+}
+.cartsgoods .cartsgoods-content image{
+  height: 200rpx;
+  width: 200rpx;
+  margin: 0 12rpx;
+}
+.cartsgoods .cartsgoods-content .carts-text{
+  flex: 1;
+}
+.carts-title{
+  height: 50rpx;
+  line-height: 50rpx;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+  width: 420rpx;
+}
+.carts-msg{
+  height: 40rpx;
+  line-height: 40rpx;
+  color: #ccc;
+}
+.pricestep{
+  margin-top: 30rpx;
+  padding: 18rpx 0;
+  height: 48rpx;
+  display: flex;
+}
+.cartsprice,step{
+  color: red;
+  flex: 1;
+}
+#carts .add,#carts .reduce{
+  border-radius: 50%;
+  font-weight: bold;
+  border: 1px solid red;
+}
+#carts .add{
+  color: #fff;
+  background: red;
+}
+#carts .reduce{
+  background: #fff;
+  color: red;
+}
+#carts .ipt{
+  background: #fff;
+}

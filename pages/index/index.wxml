@@ -1,0 +1,92 @@
+<!--pages/index/index.wxml-->
+<view id="index">
+  <view class="navBar" style="height:{{statusBarHeight+80}}px">
+    <image src="../../pages/images/navbarbj.png"></image>
+    <view class="title" style="padding-top:{{statusBarHeight}}px">
+      <view class="text">微丰达</view>
+      <view class="share">
+        <text>一家有温度的电商</text>
+      </view>
+    </view>
+  </view>
+  <view class="content" style="padding-top:{{statusBarHeight+80}}px">
+    <!-- //顶部介绍 -->
+    <view style="padding:0 20rpx;">
+      <view class="shopmsg">
+        <image src="../images/tx.png"></image>
+        <view class="msg">
+          <view class="left">
+            <view class="name">微丰达购物自提仓库点2</view>
+            <view class="adr">北京市海淀区雪燕大厦</view>
+          </view>
+          <view class="middle">
+            <view class="border"></view>
+          </view>
+          <view class="right">
+            <view class="num">
+              <view class="code" style="color:#2aacac;">250</view>
+              <view class="name">粉丝数</view>
+            </view>
+            <view class="buy">
+              <view class="code" style="color:#e91e00;">2.5万</view>
+              <view class="name">购买指数</view>
+            </view>
+          </view>
+        </view>
+      </view>
+      <!-- 分类 -->
+      <view class="nav">
+        <view class="search">
+          <view class="content">
+            <image src="../images/search.png"></image>
+            <text>搜索商品</text>
+          </view>
+        </view>
+        <view class="swiper" style="position:relative;">
+          <swiper class="screen-swiper round-dot">
+            <swiper-item wx:for="{{4}}" wx:key>
+              <van-grid column-num="5" border="{{ false }}">
+                <van-grid-item use-slot wx:for="{{ 10 }}" >
+                  <image src="../images/tx.png" class="grid-img"></image>
+                  <view class="grid-text">文字</view>
+                </van-grid-item>
+              </van-grid>
+            </swiper-item>
+          </swiper>
+          <view class="indicator-dots">
+            <view style="margin:0 auto;" wx:class="">
+              <view class="dots" wx:for="{{ 3 }}">
+                {{index}}
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+      <!-- 精品推荐 -->
+      <view class="recomed">
+        <view class="recomend-banner">
+          <image src="../images/recomend.png"></image>
+        </view>
+        <view>
+          <goods class="common-goods" actives></goods>
+        </view>
+        
+      </view>
+    </view>
+    <!-- 爆款 -->
+    <view class="hot">
+      <view class="recomend-banner">
+        <image src="../images/bk.png"></image>
+      </view>
+      <view style="padding:0 20rpx;margin-bottom:20rpx;">
+        <goods class="common-goods" actives></goods>
+      </view>
+      <view style="padding:0 20rpx;margin-bottom:20rpx;">
+        <goods class="common-goods" actives></goods>
+      </view>
+    </view>
+  </view>
+  
+
+  <view style="height:40rpx;"></view>
+</view>

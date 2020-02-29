@@ -1,0 +1,66 @@
+/* pages/class/class.wxss */
+#classify{
+
+}
+
+#classify .search{
+  padding: 10px;
+  display: flex;
+}
+#classify .search .content{
+  padding: 0 10px;
+  width: 580rpx;
+  background: #e8ebf0;
+  height: 38px;
+  line-height: 38px;
+  border-radius: 19px;
+  display: flex;
+  justify-content: flex-start;
+}
+#classify .search .content image{
+  vertical-align: middle;
+  height: 30rpx;
+  width: 30rpx;
+  margin-right: 10rpx;
+  border-radius: 18rpx;
+  align-self: middle;
+  overflow: hidden;
+}
+#classify .search .content text{
+  font-size: 30rpx;
+}
+#classify .search .carts{
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+#classify .search .carts image{
+  display: block;
+  height: 22px;
+  width: 22px;
+}
+.navgoods{
+  display: flex;
+  width: 100%;
+}
+.navgoods .navs{
+  width: 84px;
+  overflow: auto;
+  background: #f5f7fa;
+}
+.navs-items{
+  height: 60px;
+  line-height: 20px;
+  padding: 20px 10px;
+  box-sizing: border-box;
+  font-size: 12px;
+  text-align: center;
+}
+.navs-sidebar-item {
+  background: #fff;
+}
+.navgoods .goods{
+  flex: 1;
+}
+
