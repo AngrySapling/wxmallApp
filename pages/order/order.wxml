@@ -1,0 +1,47 @@
+<!--pages/order/order.wxml-->
+<view id="order">
+  <van-nav-bar
+    left-text="订单"
+    bind:click-left="onClickLeft"
+  />
+  <view class="myorder" style="height:calc(100vh - {{statusBarHeight+44}}px)">
+    <view class="tabs" style="top:{{statusBarHeight+44}}px">
+      <view wx:for="{{tabs}}" wx:key="index" class="tab-item">
+        <view class="item">
+          {{item.name}}
+        </view>
+        <text class="border"></text>
+      </view>
+    </view>
+    <!-- 订单列表 -->
+    <view class="order-list" style="display:none;" >
+      <view class="order-item">
+        <view class="order-status">
+          <view class="txt ">2020-2-20 22:22:22</view>
+          <view class="txt pay">未付款</view>
+        </view>
+        <view class="order-goods">
+          <view class="img">
+            <image src="../images/goods.png"></image>
+          </view>
+          <view class="price">
+            <view class="money">¥ <text style="padding-left:10rpx;">599</text> </view>
+            <view class="name">共1件商品</view>
+          </view>
+        </view>
+        <view class="order-pay">
+          <view class="code">提货单号</view>
+          <view class="pay">去付款</view>
+        </view>
+      </view>
+    </view>
+    <!-- 未发现订单 -->
+    <view class="no-order">
+      <view class="nogoods">
+        <image src="../images/none.png"></image>
+        <view class="no-text" style="text-align:center;">没有历史订单</view>
+        <view class="go">去逛逛</view>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,5 +1,7 @@
 {
   "pages": [
+    "pages/orderdetail/orderdetail",
+    "pages/order/order",
     "pages/my/my",
     "pages/carts/carts",
     "pages/class/class",
@@ -14,30 +16,30 @@
     "navigationBarTextStyle": "black"
   },
   "tabBar": {
-    "selectedColor":"#9d1b0d",
-    "borderStyle":"white",
+    "selectedColor": "#9d1b0d",
+    "borderStyle": "white",
     "list": [
       {
-        "iconPath":"pages/images/index.png",
-        "selectedIconPath":"pages/images/index1.png",
+        "iconPath": "pages/images/index.png",
+        "selectedIconPath": "pages/images/index1.png",
         "pagePath": "pages/index/index",
         "text": "首页"
       },
       {
-        "iconPath":"pages/images/class.png",
-        "selectedIconPath":"pages/images/class1.png",
+        "iconPath": "pages/images/class.png",
+        "selectedIconPath": "pages/images/class1.png",
         "pagePath": "pages/class/class",
         "text": "分类"
       },
       {
-        "iconPath":"pages/images/carts.png",
-        "selectedIconPath":"pages/images/carts1.png",
+        "iconPath": "pages/images/carts.png",
+        "selectedIconPath": "pages/images/carts1.png",
         "pagePath": "pages/carts/carts",
         "text": "购物车"
       },
       {
-        "iconPath":"pages/images/my.png",
-        "selectedIconPath":"pages/images/my1.png",
+        "iconPath": "pages/images/my.png",
+        "selectedIconPath": "pages/images/my1.png",
         "pagePath": "pages/my/my",
         "text": "我的"
       }

@@ -1,0 +1,124 @@
+/* pages/order/order.wxss */
+.goodsorder{
+  padding: 0 30rpx;
+}
+.tabs{
+  display: flex;
+  box-sizing: border-box;
+  height: 44px;
+  position: absolute;
+  width: 100%;
+  background: #fff;
+}
+.tabs .tab-item{
+  flex: 1;
+  margin-top:18rpx;
+  font-size: 26rpx;
+  text-align: center;
+}
+.tabs .tab-item .item{
+  padding: 10rpx 0;
+  
+}
+.border{
+  display: block;
+  margin: 0 auto;
+  height: 2px;
+  background: red;
+  width: 30rpx;
+}
+.order-list{
+  height: 100%;
+  overflow: auto;
+  box-sizing: border-box;
+  padding: 44px 20rpx 0;
+  background: #e8ebf0;
+}
+.order-item{
+  padding: 0 20rpx;
+  background: #fff;
+  margin-top: 20rpx;
+  border-radius: 10rpx;
+  overflow: hidden;
+}
+.order-status{
+  display: flex;
+  padding-top: 10rpx;
+  height: 66rpx;
+  line-height: 66rpx;
+  border-bottom: 1px solid #ccc;
+}
+.order-status .txt{
+  flex: 1;
+}
+.order-status .date{
+  font-size: 24rpx;
+  color: #9b9b9b;
+}
+.order-status .pay{
+  text-align: right;
+  font-size: 44rpx;
+}
+.order-goods{
+  padding: 16rpx 0;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+}
+.order-goods .price{
+  width: 180rpx;
+  text-align: right;
+}
+.order-goods .img{
+  flex: 1;
+}
+.order-goods .img image{
+  height: 100rpx;
+  width: 100rpx;
+}
+.price .money{
+  color: red;
+  height: 56rpx;
+  line-height: 56rpx;
+  font-size: 26rpx;
+}
+.order-pay{
+  padding: 18rpx 0;
+  display: flex;
+  height: 58rpx;
+}
+.order-pay .code{
+  flex: 1;
+}
+.order-pay .pay{
+  line-height: 56rpx;
+  border: 1px solid red;
+  color: red;
+  width: 188rpx;
+  text-align: center;
+  border-radius: 28rpx;
+}
+.no-order{
+  height: 100%;
+  background: #e8ebf0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nogoods image{
+  height: 140px;
+  width: 140px;
+}
+.nogoods .no-text{
+  line-height: 50px;
+  height: 50px;
+} 
+.go{
+  height: 33px;
+  width: 100px;
+  border-radius: 16px;
+  border:1px solid red;
+  text-align: center;
+  line-height: 33px;
+  margin:  12px auto 0;
+  color: red;
+}

@@ -1,0 +1,33 @@
+<!--pages/orderdetail/orderdetail.wxml-->
+<view id="orderdetail">
+  <van-nav-bar
+    left-text="订单详情"
+    bind:click-left="onClickLeft"
+  />
+  <view class="detail" style="height:calc(100vh - {{statusBarHeight+44}}px)">
+    <view class="payStatus">
+      <view class="status">
+        <image class="img" src="../images/payicon.png"></image>
+        <text class="text">未付款</text>
+      </view>
+      
+      <view class="bj"> <image src="../images/paybj.png"></image> </view>
+    </view>
+    <view class="pickup">
+      <view class="pickup-title">
+        <view class="text1">我的当前自提点</view>
+        <view class="text2">切换自提点<van-icon name="arrow" style="vertical-align: middle;"/></view>
+      </view>
+      <view class="pickup-nav">
+        <view class="market">开福凤凰自行车店铺</view>
+        <view class="adr">湖南长沙市开福史蒂夫蓝枫录小下庄凤凰购物中心观园路1122</view>
+        <view class="tel">
+          <text>门店电话</text>
+          <text>13311331313</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  
+  
+</view>
