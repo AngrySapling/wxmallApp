@@ -1,5 +1,8 @@
 {
   "usingComponents": {
-    "van-nav-bar": "../../components/nav-bar/index"
+    "van-nav-bar": "../../components/nav-bar/index",
+    "van-action-sheet": "../../components/action-sheet/index",
+    "pay-top":"../../components/paytop/paytop",
+    "order-goods": "../../components/ordergoods/ordergoods"
   }
 }

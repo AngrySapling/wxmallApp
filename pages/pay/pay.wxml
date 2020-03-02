@@ -1,0 +1,31 @@
+<!--pages/pay/pay.wxml-->
+<view id="pay">
+  <van-nav-bar
+    left-text="订单详情"
+    bind:click-left="onClickLeft"
+  />
+  <view class="pay-content" style="height:calc(100vh - {{statusBarHeight+44}}px)">
+    <view class="step">
+      <van-steps
+        steps="{{ steps }}"
+        active="{{ active }}"
+      />
+    </view>
+    <view class="ordermoney">
+      <view class="title">
+        订单金额
+      </view>
+      <view class="pic">
+        ¥3.99
+      </view>
+      <view class="success">
+        订单提交成功,请在10分钟内完成支付
+      </view>
+      <view class="paystyle">
+        支付方式: 微信支付
+      </view>
+    </view>
+    <view class="paybtn">去付款</view>
+  </view>
+  
+</view>

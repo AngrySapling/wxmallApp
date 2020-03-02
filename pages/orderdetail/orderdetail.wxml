@@ -5,29 +5,101 @@
     bind:click-left="onClickLeft"
   />
   <view class="detail" style="height:calc(100vh - {{statusBarHeight+44}}px)">
-    <view class="payStatus">
+    <!-- <view class="payStatus">
       <view class="status">
         <image class="img" src="../images/payicon.png"></image>
         <text class="text">未付款</text>
       </view>
-      
       <view class="bj"> <image src="../images/paybj.png"></image> </view>
-    </view>
+    </view> -->
+    <pay-top content="nopay"></pay-top>
     <view class="pickup">
-      <view class="pickup-title">
-        <view class="text1">我的当前自提点</view>
-        <view class="text2">切换自提点<van-icon name="arrow" style="vertical-align: middle;"/></view>
+      <view class="msg">
+        <view class="namephone">
+          <text>收货人 :</text>
+          <text style="padding-left:10rpx;">Snow 13133113131</text>
+        </view>
+        <view class="shopname">
+          <text>自提点 :</text>
+          <text style="padding-left:10rpx;">这是一个店铺代写撒大声地</text>
+        </view>
+        <view class="adr">
+          这是地址啊啊啊测试的可不可以啊
+        </view>
       </view>
-      <view class="pickup-nav">
-        <view class="market">开福凤凰自行车店铺</view>
-        <view class="adr">湖南长沙市开福史蒂夫蓝枫录小下庄凤凰购物中心观园路1122</view>
-        <view class="tel">
-          <text>门店电话</text>
-          <text>13311331313</text>
+      <view class="shopphone">
+        <text>门店电话:</text>
+        <text style="padding-left:10rpx;color:#f17843;">1331313131</text>
+      </view>
+    </view>
+    <order-goods></order-goods>
+    <!-- <view class="goods">
+      <image src="../images/goods.png"></image>
+      <view class="goodscontent">
+        <view class="title">土豆字段非常长哈哈哈哈撒大声地啊哈哈哈哈哈哈</view>
+        <view class="spec">1000g 正负50g</view>
+        <view class="play">
+          <view class="date">03月01日 16:00提货</view>
+          <view class="num">X1</view>
+        </view>
+        <view class="price">
+          <text class="sp1">¥</text>
+          <text class="sp2">9.99</text>
+          <text class="sp3">¥4</text>
+        </view>
+      </view>
+    </view> -->
+    <view class="allprice">
+      <view class="allnumpic">
+        <view class="num">
+          <text>共计</text>
+          <text>2</text>
+          <text>商品</text>
+        </view>
+        <view class="pic">
+          <text>应付金额: </text>
+          <text class="sp1">¥</text>
+          <text class="sp2">3.99</text>
+        </view>
+      </view>
+      <view class="orderdate">
+        <view class="code">
+          <text>订单编号:</text>
+          <text style="padding-left:10rpx;">45641351313546513</text>
+        </view>
+        <view class="code">
+            <text>下单时间:</text>
+            <text style="padding-left:10rpx;">2018-2-23 23:22:25</text>
         </view>
       </view>
     </view>
+    <view style="height:50px;"></view>
   </view>
-  
-  
+  <view class="pay">
+    <view class="paygoods pay-btn">去付款</view>
+    <view class="addgoods pay-btn">继续购物</view>
+  </view>
+  <van-action-sheet class="bottom" show="{{ show }}" >
+    <view class="paycontent">
+      <view  class="payimg">
+        <image src="../images/paydate.png"></image>
+        <view class="dates">03月01日 22:00提货</view>
+      </view>
+      
+      <view class="title">
+        此商品需要您到店自提,请仔细确认地址!
+      </view>
+      <view class="buyadr">
+        <view class="shop">
+          <text style="width:176rpx;text-align:center;">自提门店:</text>
+          <text style="flex:1;">家乐福福满多多情人人福其阿萨德</text>
+        </view>
+        <view class="shopadr">水电费水电费水电费水电费水电费水电费</view>
+      </view>
+      <view class="btn">
+        <view class="cancel">取消付款</view>
+        <view class="sure">确认付款</view>
+      </view>
+    </view>
+  </van-action-sheet>
 </view>

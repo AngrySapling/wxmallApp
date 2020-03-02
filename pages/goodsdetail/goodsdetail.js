@@ -1,13 +1,11 @@
-// pages/orderdetail/orderdetail.js
-var app = getApp()
+// pages/goodsdetail/goodsdetail.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    statusBarHeight: app.globalData.statusBarHeight,
-    show: false
+
   },
 
   /**

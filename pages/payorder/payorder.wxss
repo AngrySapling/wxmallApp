@@ -1,0 +1,75 @@
+/* pages/payorder/payorder.wxss */
+.van-nav-bar{
+  background: red !important;
+}
+.van-nav-bar__text{
+  color: #fff !important;
+}
+.payorder-content{
+  background: #ecedf2;
+  padding: 0 20rpx;
+  overflow: auto;
+}
+.shopadr{
+  margin: 20rpx 0;
+  padding: 20rpx 28rpx;
+  background: #fff;
+  border-radius: 10rpx;
+}
+.playshop{
+  line-height: 50rpx;
+  color: red;
+  font-size: 30rpx;
+}
+.adrs{
+  padding-top: 8rpx;
+  line-height: 40rpx;
+  font-size: 26rpx;
+  color: #a6a6a6;
+}
+.shoptel{
+  font-size: 25rpx;
+  height: 36rpx;
+  line-height: 36rpx;
+}
+.allprice{
+  border-radius: 10rpx;
+  margin-top: 20rpx;
+  padding: 0 20rpx;
+  background: #fff;
+}
+.allprice{
+  padding: 0 20rpx;
+}
+.allnumpic{
+  display: flex;
+  height: 98rpx;
+  line-height: 98rpx;
+  font-size: 26rpx;
+}
+.allnumpic .num,.allnumpic .pic{
+  font-size: 26rpx;
+  flex: 1;
+}
+.allnumpic .pic{
+  text-align: right;
+}
+.allnumpic .pic .sp1{
+  font-size: 20rpx;
+  color: red;
+}
+.allnumpic .pic .sp2{
+  font-size: 30rpx;
+  color: red;
+}
+.orderdate{
+  padding: 20rpx 0;
+}
+.orderdate .code{
+  display: inline-block;
+  height: 32rpx;
+  line-height: 32rpx;
+}
+.van-submit-bar__text{
+  text-align: left !important;
+}

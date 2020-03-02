@@ -1,4 +1,4 @@
-// pages/orderdetail/orderdetail.js
+// pages/pay/pay.js
 var app = getApp()
 Page({
 
@@ -7,7 +7,14 @@ Page({
    */
   data: {
     statusBarHeight: app.globalData.statusBarHeight,
-    show: false
+    steps: [
+      {
+        text: '提交订单',
+      },
+      {
+        text: '付款',
+      },
+    ]
   },
 
   /**

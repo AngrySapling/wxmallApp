@@ -1,4 +1,4 @@
-// pages/orderdetail/orderdetail.js
+// pages/payorder/payorder.js
 var app = getApp()
 Page({
 
@@ -7,7 +7,6 @@ Page({
    */
   data: {
     statusBarHeight: app.globalData.statusBarHeight,
-    show: false
   },
 
   /**

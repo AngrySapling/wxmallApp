@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "van-nav-bar": "../../components/nav-bar/index",
+    "pay-top": "../../components/paytop/paytop",
+    "order-goods": "../../components/ordergoods/ordergoods",
+    "van-submit-bar": "../../components/submit-bar/index"
+  }
+}

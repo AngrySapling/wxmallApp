@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "van-nav-bar": "../../components/nav-bar/index",
+    "van-steps": "../../components/steps/index"
+  }
+}

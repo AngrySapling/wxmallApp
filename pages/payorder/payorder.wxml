@@ -1,0 +1,42 @@
+<!--pages/pay/pay.wxml-->
+<view id="payorder">
+  <van-nav-bar
+    left-text="确认订单"
+    bind:click-left="onClickLeft"
+  />
+  <view class="payorder-content" style="height:calc(100vh - {{statusBarHeight+44}}px)">
+    <pay-top content="usermsg"></pay-top>
+    <view class="shopadr">
+      <view class="playshop">
+        <text>自提点:</text>
+        <text style="padding-left:20rpx;">水电费水电费的说法是的发送到发送到发送到佛挡杀佛水电费水电费水电费水电费</text>
+      </view>
+      <view class="adrs">多福多寿发生的发生的发的说法是的发送到发送到发送到放松放松的</view>
+      <view class="shoptel">
+        <text>门店电话:</text>
+        <text style="padding-left:20rpx;color:#fa7135;">13133113131</text>
+      </view>
+    </view>
+    <order-goods></order-goods>
+    <view class="allprice">
+      <view class="allnumpic">
+        <view class="num">
+          <text>共计</text>
+          <text>2</text>
+          <text>商品</text>
+        </view>
+        <view class="pic">
+          <text>应付金额: </text>
+          <text class="sp1">¥</text>
+          <text class="sp2">3.99</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <van-submit-bar
+    price="{{ 3050 }}"
+    button-text="提交订单"
+    bind:submit="onSubmit"
+  />
+</view>
+

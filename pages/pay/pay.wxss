@@ -1,0 +1,54 @@
+/* pages/pay/pay.wxss */
+.van-nav-bar{
+  background: red !important;
+}
+.van-nav-bar__text{
+  color: #fff !important;
+}
+.pay-content{
+  background: #ecedf2;
+  padding: 0 20rpx;
+  overflow: auto;
+}
+.step{
+  padding-top: 50rpx;
+}
+.van-steps{
+  background: none !important;
+}
+.van-step--horizontal .van-step__circle-container {
+  background: none !important;
+}
+.ordermoney{
+  padding: 70rpx 0;
+  border-radius: 10rpx;
+  background: #fff;
+  text-align: center;
+  margin-top:20rpx; 
+}
+.ordermoney .title{
+  font-size:30rpx; 
+}
+.pic{
+  height: 130rpx;
+  line-height: 130rpx;
+  color: red;
+  font-size: 48rpx;
+}
+.success,.paystyle{
+  height: 48rpx;
+  line-height: 48rpx;
+  font-size: 30rpx;
+}
+.paystyle{
+  padding-top: 40rpx;
+}
+.paybtn{
+  height: 88rpx;
+  line-height: 88rpx;
+  margin-top: 58rpx;
+  background: red;
+  color: #fff;
+  text-align: center;
+  border-radius: 44rpx;
+}
