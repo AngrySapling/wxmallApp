@@ -73,6 +73,7 @@
 }
 .common-goods  .buy{
   display: flex;
+  justify-content: flex-end;
 }
 .common-goods .addCarts,.common-goods .goGoods{
   width: 80%;
@@ -88,8 +89,8 @@
 }
 .common-goods .addCarts{
   background: #ea0212;
-  margin: 0 auto;
   align-self: flex-end;
+  float: right;
 }
 .common-goods .price {
   color: #e2000b;

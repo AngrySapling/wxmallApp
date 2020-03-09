@@ -1,2 +1,141 @@
 <!--pages/goodsdetail/goodsdetail.wxml-->
-<text>pages/goodsdetail/goodsdetail.wxml</text>
+<view class="goodsdetail">
+   <van-nav-bar
+    left-text="商品详情"
+    bind:click-left="onClickLeft"
+  />
+  <!-- 顶部nav -->
+  <view class="tabs">
+    <view class="tab-item" data-id="0" bindtap="PlayTab">
+      <view class="item">
+        商品介绍
+      </view>
+      <text class="border" wx:if="{{tabIndex == 0}}"></text>
+    </view>
+    <view class="tab-item" data-id="1" bindtap="PlayTab">
+      <view class="item">
+        购买详情
+      </view>
+      <text class="border" wx:if="{{tabIndex == 1}}"></text>
+    </view>
+  </view>
+  <view class="detail" style="overflow:auto;height:calc(100vh - {{statusBarHeight + 140}}px)">
+    <!-- 轮播 -->
+    <view class="page-section page-section-spacing swiper">
+      <swiper autoplay interval="5000" duration="500" circular>
+        <block wx:for="{{background}}" wx:key="*this">
+          <swiper-item>
+            <view class="swiper-item {{item}}">
+              <image src="../images/goods.png"></image>
+            </view>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+    <!-- 价格与时间 -->
+    <view class="picdate">
+      <view class="pic">
+        <text class="y">¥</text>
+        <text class="act">16.99</text>
+        <text class="nor">¥23.9</text>
+      </view>
+      <view class="txt">
+        <view class="toptext">距微丰达开始还剩:</view>
+        <view class="date">13：14：20 </view>
+      </view>
+    </view>
+    <!-- 商品销售信息 -->
+    <view class="goodsmsg">
+      <view class="content">
+        <view class="msg">
+          <view class="goods-title">橘子大飒飒的阿三打发士大夫打撒撒旦撒大苏打</view>
+          <view class="goods-content">这是介绍</view>
+        </view>
+        <view class="peonum">
+          <view class="follow-num">17.3万</view>
+          <view class="follow-people">关注人数</view>
+        </view>
+      </view>
+      <view class="goodsdate">
+        <view class="sales-date">
+          <view class="date-item">
+            <text>预售时间:</text>
+            <text>2月28日</text>
+          </view>
+          <view class="date-item">
+            <text>提货时间:</text>
+            <text>2月28日</text>
+          </view>
+        </view>
+        <view class="sales-num">
+          <view class="top-num" style="font-weight:bold;">
+            <text>今日已售</text>
+            <text style="color:red;">2222</text>
+            <text>份</text>
+          </view>
+          <view class="bottom-num" style="color:#dc7457;">
+            限量35000份
+          </view>
+        </view>
+      </view>
+    </view>
+    <!-- 商品详情 -->
+    <view class="goodsdetails">
+      <view class="details">
+        <image src="../images/detail.png"></image>
+      </view>
+      <view class="spec">
+        <van-row >
+          <van-col span="12">
+            <text>供应商:</text>
+            <text style="padding-left:10rpx;">正大食品</text>
+          </van-col>
+          <van-col span="12">
+            <text>供应商:</text>
+            <text style="padding-left:10rpx;">正大食品</text>
+          </van-col>
+          <van-col span="12">
+            <text>供应商:</text>
+            <text style="padding-left:10rpx;">正大食品</text>
+          </van-col>
+          <van-col span="12">
+            <text>供应商:</text>
+            <text style="padding-left:10rpx;">正大食品</text>
+          </van-col>
+        </van-row>
+      </view>
+      <view class="details">
+        <image src="../images/goodsdetail.png"></image>
+      </view>
+      <view class="rich">
+        <rich-text nodes="<div>woshi hahahha </div>" >
+        </rich-text>  
+      </view>
+      
+    </view>
+    <view style="height:52px;"></view>
+  </view>
+  <view class="goods-action">
+    <view class="action-left">
+      <view class="home left-item">
+        <image src="../images/index.png"></image>
+        <view class="txt">首页</view>
+      </view>
+      <view class="carts left-item">
+        <image src="../images/carts.png"></image>
+        <view class="txt">购物车</view>
+      </view>
+      <view class="share left-item">
+        <image src="../images/share.png"></image>
+        <view class="txt">分享</view>
+      </view>
+    </view>
+    <!-- <view class="action-right">
+      <view class="add">加入购物车</view>
+      <view class="pay">立即购买</view>
+    </view> -->
+    <view class="action-right0">
+      04日10点销售,敬请期待
+    </view>
+  </view>
+</view>

@@ -1,22 +1,24 @@
 {
   "pages": [
+    "pages/classSearch/classSearch",
+    "pages/search/search",
+    "pages/index/index",
+    "pages/carts/carts",
+    "pages/goodsdetail/goodsdetail",
+    "pages/location/location",
     "pages/pay/pay",
     "pages/payorder/payorder",
     "pages/orderdetail/orderdetail",
-    "pages/index/index",
     "pages/order/order",
     "pages/my/my",
-    "pages/carts/carts",
-    "pages/class/class",
-    "components/navbar/navbar",
-    "pages/goodsdetail/goodsdetail"
+    "pages/class/class"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationStyle": "custom",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle": "white"
+    "navigationBarTextStyle": "black"
   },
   "tabBar": {
     "selectedColor": "#9d1b0d",

@@ -1,0 +1,21 @@
+<!--pages/classSearch/classSearch.wxml-->
+<view id="classSearch">
+  <van-nav-bar
+    left-text="商品"
+    bind:click-left="onClickLeft"
+    title-class="title"
+  />
+  <view class="goods"  style="height:calc(100vh - {{statusBarHeight+44}}px);overflow:auto;">
+    <view class="hot">
+      <view class="recomend-banner">
+        <image src="../images/bk.png"></image>
+      </view>
+      <view style="padding:0 18rpx;margin-bottom:20rpx;">
+        <goods class="common-goods" actives></goods>
+      </view>
+      <view style="padding:0 18rpx;margin-bottom:20rpx;">
+        <goods class="common-goods" actives></goods>
+      </view>
+    </view>
+  </view>
+</view>

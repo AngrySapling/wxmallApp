@@ -1,7 +1,7 @@
 <!--pages/pay/pay.wxml-->
 <view id="pay">
   <van-nav-bar
-    left-text="订单详情"
+    left-text="订单支付"
     bind:click-left="onClickLeft"
   />
   <view class="pay-content" style="height:calc(100vh - {{statusBarHeight+44}}px)">

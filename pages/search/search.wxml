@@ -1,0 +1,38 @@
+<!--pages/search/search.wxml-->
+<view id="search">
+  <van-nav-bar
+    left-text="搜索商品"
+    bind:click-left="onClickLeft"
+    title-class="title"
+  />
+  <van-search
+    value="{{ value }}"
+    placeholder="请输入搜索关键词"
+    use-action-slot
+    bind:change="onChange"
+    bind:search="onSearch"
+    style="border-bottom:1xp solid #ccc;"
+  >
+    <view slot="action" bind:tap="onClick">搜索</view>
+  </van-search>
+  <view class="searchdetail" style="height:calc(100vh - {{statusBarHeight+98}}px);overflow:auto;">
+    <view class="content" style="display:none;">
+      <view class="textTitle">历史搜索</view>
+      <view class="search-text">
+        <text class="text">肉肉</text>
+      </view>
+      <view class="clear-search">
+        <van-icon name="delete" size="12" style="vertical-align: middle;"/>
+        <text>清空历史记录</text>
+      </view>
+    </view>
+    <view class="goods" >
+      <view style="margin-bottom:15rpx;">
+        <goods class="common-goods" actives></goods>
+      </view>
+      <view style="margin-bottom:15rpx;">
+        <goods class="common-goods" actives></goods>
+      </view>
+    </view>
+  </view>
+</view>

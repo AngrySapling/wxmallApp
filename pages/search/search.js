@@ -1,34 +1,15 @@
-// pages/goodsdetail/goodsdetail.js
+// pages/search/search.js
 var app = getApp()
 Page({
 
   /**
    * 页面的初始数据
    */
-  onShareAppMessage() {
-    return {
-      title: 'swiper',
-      path: 'page/component/pages/swiper/swiper'
-    }
-  },
   data: {
-    active: 0,
+    value: '',
     statusBarHeight: app.globalData.statusBarHeight,
-    background: ['demo-text-1', 'demo-text-2', 'demo-text-3'],
-    indicatorDots: true,
-    vertical: false,
-    autoplay: false,
-    interval: 2000,
-    duration: 500,
-    tabIndex:0,
   },
-  //切换tab
-  PlayTab(e){
-    let i = e.currentTarget.dataset.id;
-    this.setData({
-      tabIndex:i
-    })
-  },
+
   /**
    * 生命周期函数--监听页面加载
    */
@@ -47,7 +28,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    console.log(this.data.statusBarHeight,669)
+
   },
 
   /**

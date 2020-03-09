@@ -1,0 +1,40 @@
+/* pages/search/search.wxss */
+.van-nav-bar{
+  background: #a3e47c !important;
+ 
+}
+.van-nav-bar__text{
+  color: #fff !important;
+}
+.content,.goods{
+  padding:15rpx;
+}
+.goods{
+  background: #f2f2f2;
+}
+.textTitle{
+  padding: 30rpx 15rpx;
+  font-size: 24rpx;
+}
+.search-text{
+}
+.text{
+  background: #f2f2f2;
+  padding: 22rpx 15rpx;
+  font-size: 22rpx;
+  margin:0 15rpx 25rpx 0;
+  border-radius: 10rpx;
+}
+.clear-search{
+  width: 240rpx;
+  margin:80rpx auto 0;
+  height: 50rpx;
+  text-align: center;
+  font-size: 20rpx;
+  line-height: 50rpx;
+  border:1px solid #ccc;
+  border-radius:10rpx;
+  
+}
+
+

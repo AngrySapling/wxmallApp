@@ -70,7 +70,6 @@
         <view>
           <goods class="common-goods" actives></goods>
         </view>
-        
       </view>
     </view>
     <!-- 爆款 -->

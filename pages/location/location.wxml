@@ -1,0 +1,4 @@
+<!--pages/location/location.wxml-->
+<view class="location">
+  <map scale="20" bindregionchange="change" enable-zoom style="width:100%;height:750rpx;"></map>
+</view>

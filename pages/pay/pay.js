@@ -9,19 +9,23 @@ Page({
     statusBarHeight: app.globalData.statusBarHeight,
     steps: [
       {
+        text: '购物车',
+      },
+      {
         text: '提交订单',
       },
       {
         text: '付款',
       },
-    ]
+    ],
+    active:1
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    
   },
 
   /**

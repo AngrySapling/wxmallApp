@@ -1,3 +1,15 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "van-nav-bar": "../../components/nav-bar/index",
+    "van-tab": "../../components/tab/index",
+    "van-tabs": "../../components/tabs/index",
+    "van-row": "../../components/row/index",
+    "van-col": "../../components/col/index",
+    "van-icon": "../../components/icon/index"
+  },
+  "navigationBarBackgroundColor": "#ffffff",
+  "navigationBarTextStyle": "black",
+  "backgroundColor": "#eeeeee",
+  "backgroundTextStyle": "light"
+  
 }
